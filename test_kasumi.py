@@ -1,12 +1,10 @@
 import kasumi 
 
-key = 0x9900aabbccddeeff1122334455667788
-# text = 0xfedcba0987654321
-text = 0x68656c6c6f20
-# text = 114784820031264
-print("Plaintext: ", text)
-# print(text)
-# print(type(text))
+#https://www.cosic.esat.kuleuven.be/nessie/testvectors/
+
+key = 0x20000000000000000000000000000000
+text = 0x0000000000000000
+
 test = kasumi.Kasumi()
 test.KeySchedule(key)
 
